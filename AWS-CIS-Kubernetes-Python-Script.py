@@ -54,3 +54,5 @@ html_template = """
 """
 template = Template(html_template)
 print(template.render(cis_params=cis_params))
+
+##This script connects to the AWS Kubernetes environment using the boto3 library, defines the CIS benchmark parameters, checks if each parameter is met, and renders the results in HTML format using the jinja2 library. The results are then printed to the console. Note that the script only defines the CIS benchmark parameters and assigns the result of the check to the "compliant" variable, the actual code to check if the parameter is met should be added.
